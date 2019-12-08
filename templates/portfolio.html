@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta tag -->
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<meta name='copyright' content='codeglim'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">	
+		
+		<!-- Title Tag -->
+		<title>Temitope &minus; Software Developer, User Experience Designer, Developer &amp; Entrepreneur</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}">	
+		
+        <!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet"> 
+		
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}">
+		
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+		
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.fancybox.min.css')}}">
+		
+		<!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/slicknav.min.css')}}">
+		
+		<!-- Animate Text -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/animate-text.css')}}">
+		
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+		
+		<!-- Bootstrap Css -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+		
+		<!-- Sufia StyleShet -->
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}">	
+        <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">	
+		
+		<!-- Maheraj Template Color -->
+		<link rel="stylesheet" href="{{url_for('static', filename='css/color/color1.css')}}">
+		<!--<link rel="stylesheet" href="css/color/color2.css">-->
+		<!--<link rel="stylesheet" href="css/color/color3.css">-->
+		<!--<link rel="stylesheet" href="css/color/color4.css">-->
+		<!--<link rel="stylesheet" href="css/color/color5.css">-->
+		<!--<link rel="stylesheet" href="css/color/color6.css">-->
+		<!--<link rel="stylesheet" href="css/color/color7.css">-->
+		<!--<link rel="stylesheet" href="css/color/color8.css">-->
+		<!--<link rel="stylesheet" href="css/color/color9.css">-->
+		<!--<link rel="stylesheet" href="css/color/color10.css">-->
+
+		<!--[if lt IE 9]>
+           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+		<div class="loader">
+			<div class="loader-inner">
+				<div class="k-line k-line11-1"></div>
+				<div class="k-line k-line11-2"></div>
+				<div class="k-line k-line11-3"></div>
+				<div class="k-line k-line11-4"></div>
+				<div class="k-line k-line11-5"></div>
+			</div>
+		</div>
+		<!-- End Preloader -->
+	
+		<!-- Start Header -->
+		<header id="header" class="normal">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-12 col-xs-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="{{url_for('index')}}"><span>T</span>emitope</a>
+						</div>
+						<!--/ End Logo -->
+						<div class="mobile-nav"></div>
+					</div>
+					<div class="col-md-10 col-sm-12 col-xs-12">
+						<div class="nav-area">
+							<!-- Main Menu -->
+							<nav class="mainmenu">
+								<div class="collapse navbar-collapse">
+									<ul class="nav navbar-nav menu">
+										<li><a href="{{url_for('index')}}"><i class="fa fa-home"></i>Homepage</a>
+											<!-- <ul>
+												<li><a href="{{url_for('index')}}"><i class="fa fa-angle-double-right"></i>Homepage One</a></li>
+												<li><a href="index2.html"><i class="fa fa-angle-double-right"></i>Homepage Two</a></li>
+												<li><a href="index3.html"><i class="fa fa-angle-double-right"></i>Homepage Three</a></li>
+												<li><a href="index4.html"><i class="fa fa-angle-double-right"></i>Homepage Four</a></li>
+											</ul> -->
+										</li>
+										<li><a href="{{url_for('index')}}"><i class="fa fa-rocket"></i>My Service</a></li>
+										<li class="active"><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+											<ul>
+												<li><a href="{{url_for('portfolio')}}"><i class="fa fa-angle-double-right"></i>All Portfolios</a></li>
+												<!-- <li><a href="portfolio-4-column.html"><i class="fa fa-angle-double-right"></i>Portfolio 4 Column</a></li>
+												<li><a href="portfolio-3-column.html"><i class="fa fa-angle-double-right"></i>Portfolio 3 Column</a></li>
+												<li><a href="portfolio-2-column.html"><i class="fa fa-angle-double-right"></i>Portfolio 2 Column</a></li>
+												<li><a href="portfolio-single.html"><i class="fa fa-angle-double-right"></i>Portfolio Single</a></li> -->
+											</ul>
+										</li>
+										<!-- <li><a href="{{url_for('index')}}"><i class="fa fa-history"></i>Timeline</a></li> -->
+										<li><a href="{{url_for('index')}}"><i class="fa fa-star"></i>Testimonials</a></li>		
+										<li><a href="{{url_for('blogposts')}}"><i class="fa fa-pencil"></i>Blog</a>
+											<!-- <ul>
+												<li><a href="{{url_for('blogposts')}}"><i class="fa fa-angle-double-right"></i>All Blog Posts</a></li>
+												<li><a href="blog-grid-sidebar.html"><i class="fa fa-angle-double-right"></i>Blog Grid With Sidebar</a></li>
+												<li><a href="blog-list.html"><i class="fa fa-angle-double-right"></i>Blog List Style</a></li>
+												<li><a href="blog-list-sidebar.html"><i class="fa fa-angle-double-right"></i>Blog List With Sidebar</a></li>
+												<li><a href="blog-single.html"><i class="fa fa-angle-double-right"></i>Blog Single</a></li>
+												<li><a href="blog-single-sidebar.html"><i class="fa fa-angle-double-right"></i>Blog Single With Sidebar</a></li>
+											</ul> -->
+										</li>		
+										<li><a href="{{url_for('index')}}"><i class="fa fa-address-book"></i>Contact</a></li>	
+										{% if current_user.is_authenticated%}
+										<li><a href="{{url_for('admin')}}"><i class="fa fa-address-book"></i>Admin</a></li>		
+										{%else%}
+										<li><a href="{{url_for('login')}}"><i class="fa fa-address-book"></i>Login</a></li>		
+									{%endif%}	
+									</ul>
+									<ul class="social-icon">
+										<li><a href="#header"><i class="fa fa-plus"></i></a></li>
+									</ul>
+									<ul class="social">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-behance"></i></a></li>
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+									</ul>
+								</div>
+							</nav>
+							<!--/ End Main Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/ End Header -->
+			
+		<!-- Start Breadcrumbs -->
+		<section id="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h2>Welcome to our Project</h2>
+						<ul class="bread-list">
+							<li><a href="{{url_for('index')}}">Home</a></li>
+							<li class="active"><a href="{{url_for('portfolio')}}">Portfolio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Breadcrumbs -->
+		
+		<!-- Start portfolio -->
+		<section id="portfolio" class="section archive column">
+			<div class="nav-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<!-- portfolio Nav -->
+							<div class="portfolio-nav">
+								<ul>
+									<li class="active" data-filter="*"><span>06</span><i class="fa fa-tasks"></i>All Works</li>
+									<!-- <li data-filter=".development"><span>03</span><i class="fa fa-pencil"></i>Web Development</li>
+									<li data-filter=".design"><span>02</span><i class="fa fa-paint-brush"></i>Web Design</li>
+									<li data-filter=".html5"><span>03</span><i class="fa fa-html5"></i>HTML5</li>
+									<li data-filter=".wordpress"><span>02</span><i class="fa fa-wordpress"></i>Wordpress</li> -->
+								</ul>
+							</div>
+							<!--/ End portfolio Nav -->
+						</div>
+					</div>
+				</div>		
+			</div>		
+			<div class="container">
+				<div class="portfolio-inner">
+					<div class="row stylex">	
+						<div class="isotop-active">			
+							<!-- Single portfolio -->
+							
+							{% for newportpost in newportposts%}
+							<div class="mix design development col-md-6 col-sm-6 col-xs-12 col-fix">
+								<div class="portfolio-single">
+									<div class="portfolio-head">
+										<img src="{{url_for('static', filename='admin/portpix/'+newportpost.portpix)}}" alt=""/>
+									</div>
+									<div class="portfolio-hover">
+										<h4><span>{{newportpost.portcategory}}</span><a href="#">{{newportpost.portfoliotitle}}</a></h4>
+										<p>{{newportpost.portfoliocontent|safe}}</p>
+										<div class="button">
+											<a data-fancybox="gallery" href="{{url_for('static', filename='admin/portpix/'+newportpost.portpix)}}"><i class="fa fa-search"></i></a>
+											<a href="{{url_for('portfolio_single',id=newportpost.id)}}" class="primary"><i class="fa fa-link"></i></a>
+										</div> 
+									</div>
+								</div>
+							</div>
+							{%endfor%}
+							<!--/ End portfolio -->			
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End portfolio -->
+		
+		<!-- Footer Top -->
+		<section id="footer-top" class="section">
+			<div class="container">
+				<div class="row">
+					<!-- Single Widget -->
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="newslatter">
+							<h2><span>Signup</span>Newslatter</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tenetur, dolores aperiam, quasi perferendis nemo mollitia labore molestias modi consequatur expedita ad voluptates dolor ex. Impedit quo temporibus, molestiae fugit?</p>
+						</div>
+						<form class="news-form">
+							<input type="email" placeholder="type your email">
+							<button type="submit" class="button primary"><i class="fa fa-paper-plane"></i></button>
+						</form>	
+					</div>
+					<!--/ End Single Widget -->
+				</div>
+			</div>
+		</section>
+		<!--/ End footer Top -->
+	
+		<!-- Start Footer -->
+		<footer id="footer" class="wow fadeIn">
+			<!-- Arrow -->
+			<div class="arrow">
+				<a href="#header" class="btn"><i class="fa fa-angle-up"></i></a>
+			</div>
+			<!--/ End Arrow -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Copyright -->
+						<div class="copyright">
+							<p>&copy; Copyright 2019 Temitope Ilesanmi.</p>
+						</div>
+						<!--/ End Copyright -->
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Social -->
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li class="active"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						</ul>
+						<!--/ End Social -->
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/ End Footer -->
+		
+		<!-- Jquery -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+		
+		<!-- Modernizr JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/modernizr.min.js')}}"></script>
+			
+		<!-- WOW JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+		
+		<!-- Fancybox js -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.fancybox.min.js')}}"></script>
+		
+		<!-- Animate Text JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/animate-text.js')}}"></script>
+		
+		<!-- Mobile Menu JS -->
+    	<script type="text/javascript" src="{{url_for('static', filename='js/jquery.slicknav.min.js')}}"></script>
+		
+		<!-- Jquery Parallax -->
+    	<script type="text/javascript" src="{{url_for('static', filename='js/jquery.stellar.min.js')}}"></script>
+		
+		<!-- Jquery Easing -->
+    	<script type="text/javascript" src="{{url_for('static', filename='js/easing.js')}}"></script>
+		
+		<!-- One Page Nav JS -->
+    	<script type="text/javascript" src="{{url_for('static', filename='js/jquery.nav.js')}}"></script>
+		
+		<!-- Slider Carousel JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+
+		<!-- Youtube Player JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/ytplayer.min.js')}}"></script>
+
+		<!-- Particle JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/particles.min.js')}}"></script>
+		
+		<!-- Counter JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+		
+		<!-- Mixitup JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+		
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+		
+		<!-- Main JS -->
+		<script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Highdmin - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{url_for('static', filename='./admin/assets/images/favicon.ico')}}">
+
+        <!-- App css -->
+        <link href="{{url_for('static', filename='./admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{url_for('static', filename='./admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{url_for('static', filename='./admin/assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{url_for('static', filename='./admin/assets/css/style.css')}}" rel="stylesheet" type="text/css" />
+
+        <script src="{{url_for('static', filename='./admin/assets/js/modernizr.min.js')}}"></script>
+
+    </head>
+
+
+    <body class="account-pages">
+
+        <!-- Begin page -->
+        <div class="accountbg" style="background: url('{{url_for("static", filename="./admin/assets/images/bg-11.jpg")}}');background-size: cover;background-position: center;"></div>
+
+        <div class="wrapper-page account-page-full">
+
+            <div class="card">
+                <div class="card-block">
+
+                    <div class="account-box">
+
+                        <div class="card-box p-5">
+                                {%include"includes/_message.html"%}
+                                
+                            <h2 class="text-uppercase text-center pb-4">
+                                <a href="{{url_for('admin')}}" class="text-success">
+                                    <span><img src="{{url_for('static', filename='./admin/assets/images/logo.png')}}" alt="" height="26"></span>
+                                </a>
+                            </h2>
+
+                            <form class="form-horizontal" method='post' action="{{url_for('register')}}"  enctype="multipart/form-data">
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="fullname">Full Name</label>
+                                        <input class="form-control" type="text" id="name" required="" name="name" placeholder="Michael Zenaty">
+                                    </div>
+                                </div>
+                                
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="username">Username</label>
+                                        <input class="form-control" type="text" id="username" required="" name="username" placeholder="Username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="career">Career</label>
+                                        <input class="form-control" type="text" id="career" required="" name="career" placeholder="Your carerr here">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="emailaddress">Email address</label>
+                                        <input class="form-control" type="email" id="emailaddress" required="" name="email" placeholder="john@deo.com">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="number">Phone</label>
+                                        <input class="form-control" type="tel" id="phone" required="" name="phone" placeholder="Enter your phone number">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="password">Password</label>
+                                        <input class="form-control" type="password" required="" name="password" id="password" placeholder="Enter your password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="re-enterpassword">Re-enter Password</label>
+                                        <input class="form-control" type="password" required="" name='confirm_password' id="password" placeholder="Re-enter your password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+                                        <label for="picture">Picture</label>
+                                        <input type="file" id="input-file-max-fs" name="userpix" class="file-upload" data-max-file-size="2M" />
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row m-b-20">
+                                    <div class="col-12">
+
+                                        <div class="checkbox checkbox-custom">
+                                            <input id="remember" type="checkbox" checked="">
+                                            <label for="remember">
+                                                I accept <a href="#" class="text-custom">Terms and Conditions</a>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group row text-center m-t-10">
+                                    <div class="col-12">
+                                        <button class="btn btn-block btn-custom waves-effect waves-light" type="submit">Sign Up Free</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            <div class="row m-t-50">
+                                <div class="col-sm-12 text-center">
+                                    <p class="text-muted">Already have an account?  <a href="page-login.html" class="text-dark m-l-5"><b>Sign In</b></a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="m-t-40 text-center">
+                    <p class="account-copyright">2018 © Highdmin. - Coderthemes.com</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery  -->
+        <script src="{{url_for('static', filename='./admin/assets/js/jquery.min.js')}}"></script>
+        <script src="{{url_for('static', filename='./admin/assets/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{url_for('static', filename='./admin/assets/js/metisMenu.min.js')}}"></script>
+        <script src="{{url_for('static', filename='./admin/assets/js/waves.js')}}"></script>
+        <script src="{{url_for('static', filename='./admin/assets/js/jquery.slimscroll.js')}}"></script>
+
+        <!-- App js -->
+        <script src="{{url_for('static', filename='./admin/assets/js/jquery.core.js')}}"></script>
+        <script src="{{url_for('static', filename='./admin/assets/js/jquery.app.js')}}"></script>
+
+    </body>
+    </html>
